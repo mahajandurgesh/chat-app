@@ -1,0 +1,195 @@
+#welcomeUser{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#chat-panel {
+  display: table-row;
+  height: inherit;
+}
+#menu {
+  display: table-cell;
+  border-right: 1px solid black;
+  height: inherit;
+  width: 40%;
+  margin: 0;
+
+}
+#chat-box {
+  margin: 0;
+  padding-bottom: 3rem;
+  display: table-cell;
+  height: inherit;
+  position: relative;
+}
+#container {
+  display: table;
+  width: 70%;
+  height: 75vh;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0;
+}
+#user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: inherit;
+  overflow-y: auto;
+}
+
+.user-list-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.user-list-item:hover {
+  background-color: #f2f2f2;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+  
+}
+#input:focus {
+  outline: none;
+}
+#form > button {
+  background: #333;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+}
+
+.roomButton{
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+#createRoom{
+  margin-right: 10px;
+}
+
+#joinRoom{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#send{
+  cursor: pointer;
+}
+
+#rooms{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+#messages > li {
+  padding: 0.5rem 1rem;
+  margin-bottom: 5px;
+}
+.sent{
+  align-self: flex-end;
+  background-color: #DCF8C6;
+  color: #333;
+  border-radius: 10px;
+  padding: 8px;
+  max-width: 70%;
+  text-align: right;
+}
+.received{
+  align-self: flex-start;
+  background-color: #F2F2F2;
+  color: #333;
+  border-radius: 10px;
+  padding: 8px;
+  max-width: 70%;
+  text-align: left;
+}
+.room-message{
+  font-style: italic;
+  text-align: center;
+  color: #888;
+  margin: 0;
+  padding: 6px 0;
+}
+#from{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+#online-users{
+  text-align: center;
+  font-weight: bold;
+}
+
+#div-username{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 5px;
+}
+#div-nickname{
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: none;
+  margin: 5px;
+}
+#username{
+  margin-right: 10px;
+}
+#nickname{
+  margin-right: 10px;
+}
+#submitUsername{
+  margin-right: 10px;  
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 3px;
+}
+#submitNickname{
+  margin-right: 10px;  
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 3px;
+}

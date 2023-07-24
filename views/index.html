@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div-username">
+      <label>Username: </label>
+      <input type="text" id="username" />
+      <button id="submitUsername" onclick="submitUsername()">Submit</button>
+      <label id="labelnick"></label>
+    </div>
+    <div id="div-nickname">
+      <label>Nickname: </label>
+      <input type="text" id="nickname" />
+      <button id="submitNickname" onclick="setUser()">Submit</button>
+    </div>
+  </body>
+</html>
